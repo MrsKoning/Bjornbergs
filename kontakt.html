@@ -3,28 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Kontakta Björnbergs Åkeri & Grus AB – vi hjälper dig med ballastprodukter, transporter och entreprenad i Nykvarn.">
+  <meta name="description" content="Kontakta Björnbergs Åkeri & Grus AB – produktfrågor, transportuppdrag, offert och besök.">
   <title>Kontakt – Björnbergs Åkeri & Grus AB</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/kontakt.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="kontakt.css">
 </head>
 <body>
 
-  <!-- ── NAV ── -->
+  <!-- ══ NAV ══ -->
   <nav class="site-nav scrolled" id="siteNav">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
-        <img src="assets/logo-white.png" alt="Björnbergs Åkeri & Grus AB" class="logo-white">
-        <img src="assets/logo-black.png" alt="Björnbergs Åkeri & Grus AB" class="logo-black">
+        <img src="images/logo-white.png" alt="Björnbergs Åkeri & Grus AB" class="logo-white">
+        <img src="images/logo-black.png" alt="Björnbergs Åkeri & Grus AB" class="logo-black">
       </a>
       <ul class="nav-links">
         <li><a href="index.html">Hem</a></li>
         <li><a href="produkter.html">Produkter</a></li>
         <li><a href="transport-entreprenad.html">Transport & Entreprenad</a></li>
         <li><a href="foretagsby.html">Företagsby</a></li>
-        <li><a href="kontakt.html" class="nav-contact-btn active">Kontakt</a></li>
       </ul>
-      <button class="hamburger" id="hamburger" aria-label="Meny">
+      <a href="kontakt.html" class="nav-cta active">Kontakt</a>
+      <button class="hamburger" id="hamburger" aria-label="Öppna meny">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -37,24 +37,33 @@
     <a href="kontakt.html">Kontakt</a>
   </div>
 
-  <!-- ── KONTAKT ── -->
-  <main class="kontakt-wrap">
-    <div class="container">
+  <!-- ══ PAGE HERO ══ -->
+  <section class="page-hero">
+    <div class="inner">
+      <span class="section-label">Vi svarar inom 1–2 arbetsdagar</span>
+      <h1>Kontakta oss</h1>
+      <p>Frågor om produkter, offert på transport eller ett anläggningsprojekt? Fyll i formuläret eller ring oss direkt.</p>
+    </div>
+  </section>
+
+  <!-- ══ KONTAKTINNEHÅLL ══ -->
+  <main class="kontakt-wrap full-width">
+    <div class="inner">
       <div class="kontakt-grid">
 
         <!-- Info -->
         <div class="kontakt-info">
-          <span class="section-label">Kom i kontakt</span>
-          <h1>Vi finns här<br>för dig</h1>
+          <span class="section-label">Hitta oss</span>
+          <h1 style="font-size: clamp(1.6rem,2.8vw,2.2rem);">Vi finns här<br>för dig</h1>
           <div class="divider"></div>
-          <p>Har du frågor om produkter, transporter eller ett pågående projekt? Fyll i formuläret eller kontakta oss direkt.</p>
+          <p>Ring, maila eller besök oss på plats i Skäggetorp. Vi hjälper dig med allt från enstaka lass till hela anläggningsprojekt.</p>
 
           <div class="kontakt-details">
             <div class="kontakt-detail-row">
               <span class="detail-icon">📍</span>
               <div class="detail-text">
                 <h4>Adress</h4>
-                <p>Skäggetorp, Taxinge<br>155 93 Nykvarn</p>
+                <p>Skäggetorp, Taxinge, 155 93 Nykvarn</p>
               </div>
             </div>
             <div class="kontakt-detail-row">
@@ -72,23 +81,24 @@
                 <a href="mailto:info@bjornbergs.com">info@bjornbergs.com</a>
               </div>
             </div>
-          </div>
-
-          <div class="oppettider">
-            <h4>Öppettider</h4>
-            <p>Måndag–Fredag: 07:00–17:00</p>
-            <p>Lördag–Söndag: Stängt</p>
+            <div class="kontakt-detail-row">
+              <span class="detail-icon">🕐</span>
+              <div class="detail-text">
+                <h4>Öppettider</h4>
+                <p>Mån–Fre 07:00–17:00 &nbsp;|&nbsp; Lör–Sön Stängt</p>
+              </div>
+            </div>
           </div>
 
           <div class="karta-section">
             <h3>Hitta hit</h3>
             <iframe
               class="karta-embed"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2040.0!2d17.42!3d59.18!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDEwJzQ4LjAiTiAxN8KwMjUnMTIuMCJF!5e0!3m2!1ssv!2sse!4v1700000000000!5m2!1ssv!2sse"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2040!2d17.42!3d59.18!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDEwJzQ4LjAiTiAxN8KwMjUnMTIuMCJF!5e0!3m2!1ssv!2sse!4v1700000000000"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-              title="Björnbergs Åkeri & Grus AB – karta">
+              title="Björnbergs Åkeri & Grus AB – hitta hit">
             </iframe>
           </div>
         </div>
@@ -149,7 +159,7 @@
             </div>
 
             <div class="form-submit-row">
-              <button type="submit" class="btn-submit" id="submitBtn">Skicka meddelande</button>
+              <button type="submit" class="btn-submit">Skicka meddelande</button>
               <span class="form-note">Vi svarar normalt inom 1–2 arbetsdagar.</span>
             </div>
           </form>
@@ -159,13 +169,13 @@
     </div>
   </main>
 
-  <!-- ── FOOTER ── -->
-  <footer class="site-footer">
-    <div class="container">
+  <!-- ══ FOOTER ══ -->
+  <footer class="site-footer full-width">
+    <div class="footer-inner">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="assets/logo-white.png" alt="Björnbergs Åkeri & Grus AB">
-          <p>Pålitliga transporter, ballastprodukter och entreprenad för industri, bygg och privat. Verksamma i Nykvarn sedan över 50 år.</p>
+          <img src="images/logo-white.png" alt="Björnbergs Åkeri & Grus AB">
+          <p>Pålitliga transporter, ballastprodukter och entreprenad i Nykvarn. Mer än 50 års lokalt förankrad erfarenhet.</p>
         </div>
         <div class="footer-col">
           <h4>Navigering</h4>
@@ -178,9 +188,11 @@
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Produkter</h4>
+          <h4>Produktkategorier</h4>
           <ul>
-            <li><a href="produkter.html#ballast">Ballast & Jord</a></li>
+            <li><a href="produkter.html#ballast">Ballast & Naturgrus</a></li>
+            <li><a href="produkter.html#berg">Bergmaterial</a></li>
+            <li><a href="produkter.html#jord">Jordprodukter</a></li>
             <li><a href="produkter.html#golf">Golfbanematerial</a></li>
             <li><a href="produkter.html#betong">Betongmaterial</a></li>
           </ul>
@@ -208,7 +220,7 @@
     const nav = document.getElementById('siteNav');
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 0);
-    });
+    }, { passive: true });
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobileMenu');
     hamburger.addEventListener('click', () => {
@@ -216,10 +228,10 @@
       mobileMenu.classList.toggle('open');
     });
 
-    // ── Session storage keys ──
+    // ── Fältnycklar ──
     const FIELDS = ['namn','foretagsnamn','telefon','epost','arende','meddelande'];
 
-    // ── Restore saved form data (from integritetspolicy-page visit) ──
+    // ── Återställ sparade värden ──
     FIELDS.forEach(id => {
       const saved = sessionStorage.getItem('kontakt_' + id);
       if (saved) {
@@ -227,13 +239,12 @@
         if (el) el.value = saved;
       }
     });
-    // Restore checkbox
     if (sessionStorage.getItem('kontakt_policy') === 'true') {
       document.getElementById('policy').checked = true;
     }
 
-    // ── Save form data before navigating to integritetspolicy ──
-    document.getElementById('policyLink').addEventListener('click', function(e) {
+    // ── Spara innan man läser integritetspolicyn ──
+    document.getElementById('policyLink').addEventListener('click', () => {
       FIELDS.forEach(id => {
         const el = document.getElementById(id);
         if (el) sessionStorage.setItem('kontakt_' + id, el.value);
@@ -241,39 +252,35 @@
       sessionStorage.setItem('kontakt_policy', document.getElementById('policy').checked);
     });
 
-    // ── Validation helpers ──
+    // ── Validering ──
     function validateEmail(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
     function validateTel(v)   { return v.trim().length >= 5; }
-    function markError(id)    {
-      const el = document.getElementById(id);
-      if (el) el.classList.add('error');
-    }
-    function clearErrors() {
+    function markError(id)    { const el = document.getElementById(id); if (el) el.classList.add('error'); }
+    function clearErrors()    {
       document.querySelectorAll('.error').forEach(el => el.classList.remove('error'));
       document.getElementById('policyWrapper').classList.remove('error');
     }
 
-    // ── Form submit ──
+    // ── Skicka ──
     document.getElementById('kontaktForm').addEventListener('submit', function(e) {
       e.preventDefault();
       clearErrors();
 
-      const namn        = document.getElementById('namn').value.trim();
-      const foretagsnamn= document.getElementById('foretagsnamn').value.trim();
-      const telefon     = document.getElementById('telefon').value.trim();
-      const epost       = document.getElementById('epost').value.trim();
-      const arende      = document.getElementById('arende').value;
-      const meddelande  = document.getElementById('meddelande').value.trim();
-      const policy      = document.getElementById('policy').checked;
+      const namn         = document.getElementById('namn').value.trim();
+      const foretagsnamn = document.getElementById('foretagsnamn').value.trim();
+      const telefon      = document.getElementById('telefon').value.trim();
+      const epost        = document.getElementById('epost').value.trim();
+      const arende       = document.getElementById('arende').value;
+      const meddelande   = document.getElementById('meddelande').value.trim();
+      const policy       = document.getElementById('policy').checked;
+      const feedback     = document.getElementById('formFeedback');
 
       let valid = true;
-      const feedback = document.getElementById('formFeedback');
-
-      if (!namn)              { markError('namn');        valid = false; }
-      if (!validateTel(telefon)) { markError('telefon');  valid = false; }
-      if (!validateEmail(epost)) { markError('epost');    valid = false; }
-      if (!arende)            { markError('arende');      valid = false; }
-      if (!meddelande)        { markError('meddelande');  valid = false; }
+      if (!namn)               { markError('namn');       valid = false; }
+      if (!validateTel(telefon)){ markError('telefon');   valid = false; }
+      if (!validateEmail(epost)){ markError('epost');     valid = false; }
+      if (!arende)              { markError('arende');    valid = false; }
+      if (!meddelande)          { markError('meddelande');valid = false; }
       if (!policy) {
         document.getElementById('policyWrapper').classList.add('error');
         valid = false;
@@ -286,13 +293,10 @@
         return;
       }
 
-      // ── Build subject ──
-      // Om företagsnamn finns → "Meddelande från hemsidan – Företaget AB"
-      // Annars → "Meddelande från hemsidan – Anna Svensson"
+      // Ämnesrad: företagsnamn om ifyllt, annars personnamn
       const subjectSuffix = foretagsnamn || namn;
       const subject = encodeURIComponent('Meddelande från hemsidan – ' + subjectSuffix);
 
-      // ── Build body ──
       const body = encodeURIComponent(
         'Namn: ' + namn + '\n' +
         (foretagsnamn ? 'Företag: ' + foretagsnamn + '\n' : '') +
@@ -302,18 +306,14 @@
         'Meddelande:\n' + meddelande
       );
 
-      const mailtoLink = 'mailto:info@bjornbergs.com?subject=' + subject + '&body=' + body;
-
-      // Clear session storage after successful send attempt
+      // Rensa sessionStorage
       FIELDS.forEach(id => sessionStorage.removeItem('kontakt_' + id));
       sessionStorage.removeItem('kontakt_policy');
 
-      // Open mail client
-      window.location.href = mailtoLink;
+      window.location.href = 'mailto:info@bjornbergs.com?subject=' + subject + '&body=' + body;
 
-      // Show confirmation
       feedback.className = 'form-feedback success';
-      feedback.textContent = 'Ditt e-postprogram öppnas nu. Skicka meddelandet därifrån för att slutföra.';
+      feedback.textContent = 'Ditt e-postprogram öppnas nu – skicka meddelandet därifrån för att slutföra.';
       feedback.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     });
   </script>

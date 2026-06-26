@@ -1,0 +1,213 @@
+/* ============================================
+   foretagsby.css – Larssons Företagsby
+   ============================================ */
+
+/* ── Intro ── */
+.fb-intro {
+  padding: 80px 0;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+.fb-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+.fb-intro-text h2 { margin-bottom: 1.2rem; }
+.fb-intro-text p  { color: var(--text-mid); margin-bottom: 1rem; }
+
+.fb-map-placeholder {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  aspect-ratio: 4/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  color: var(--text-muted);
+}
+.fb-map-placeholder .map-icon { font-size: 2.5rem; }
+.fb-map-placeholder p {
+  font-size: 0.85rem;
+  text-align: center;
+  max-width: 220px;
+  color: var(--text-muted);
+}
+.fb-map-embed {
+  width: 100%;
+  aspect-ratio: 4/3;
+  border: 1px solid var(--border);
+  filter: grayscale(60%) contrast(0.95);
+}
+
+/* ── Verksamheter ── */
+.fb-verksamheter {
+  padding: 90px 0;
+  background: var(--bg-alt);
+}
+.fb-kort-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border);
+  margin-top: 3rem;
+}
+.fb-kort {
+  background: var(--bg-card);
+  padding: 2.6rem 2.2rem;
+  position: relative;
+  transition: background var(--transition);
+}
+.fb-kort:hover { background: var(--bg); }
+.fb-kort::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 0; height: 3px;
+  background: var(--gold);
+  transition: width 0.4s ease;
+}
+.fb-kort:hover::after { width: 100%; }
+.fb-kort-icon { font-size: 2.2rem; margin-bottom: 1.2rem; }
+.fb-kort h3 {
+  font-size: 1.2rem;
+  color: var(--text);
+  margin-bottom: 0.8rem;
+}
+.fb-kort p { font-size: 0.92rem; color: var(--text-muted); margin-bottom: 1rem; }
+.fb-kort ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.fb-kort ul li {
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  padding-left: 1.1rem;
+  position: relative;
+}
+.fb-kort ul li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+}
+
+/* ── Björnbergs i byn ── */
+.fb-bjornbergs {
+  padding: 90px 0;
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.fb-bjornbergs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+.fb-bjornbergs-text .section-label { color: var(--gold-dark); }
+.fb-bjornbergs-text h2 { color: var(--text); margin-bottom: 1.2rem; }
+.fb-bjornbergs-text p  { color: var(--text-mid); margin-bottom: 1rem; }
+
+.fb-fakta {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--border);
+}
+.fb-fakta-rad {
+  background: var(--bg-alt);
+  padding: 1.3rem 1.6rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.2rem;
+  align-items: start;
+}
+.fb-fakta-rad .fakta-icon { font-size: 1.2rem; margin-top: 2px; }
+.fb-fakta-rad .fakta-text h4 {
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  color: var(--gold-dark);
+  margin-bottom: 0.2rem;
+}
+.fb-fakta-rad .fakta-text p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* ── Lediga lokaler ── */
+.fb-ledigt {
+  padding: 90px 0;
+  background: var(--dark);
+  position: relative;
+}
+.fb-ledigt::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(20,18,16,0.97) 0%, rgba(44,42,40,0.95) 100%);
+}
+.fb-ledigt .inner { position: relative; z-index: 2; }
+.fb-ledigt .section-label { color: var(--gold-light); }
+.fb-ledigt h2 { color: var(--text-light); margin-bottom: 1.2rem; }
+.fb-ledigt-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: rgba(255,255,255,0.08);
+  margin: 3rem 0;
+}
+.lokal-kort {
+  background: rgba(255,255,255,0.03);
+  padding: 2.2rem 2rem;
+  transition: background var(--transition);
+}
+.lokal-kort:hover { background: rgba(255,255,255,0.06); }
+.lokal-kort h4 {
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  color: var(--gold-light);
+  margin-bottom: 0.8rem;
+}
+.lokal-kort p { font-size: 0.9rem; color: rgba(244,241,236,0.55); margin-bottom: 0.8rem; }
+.lokal-tag {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 0.65rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border: 1px solid rgba(181,160,122,0.4);
+  color: var(--gold-light);
+}
+.fb-ledigt .text-center { margin-top: 1rem; }
+
+/* ── CTA ── */
+.fb-cta {
+  padding: 80px 0;
+  background: var(--bg-alt);
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+.fb-cta h3 { margin-bottom: 0.8rem; font-size: 1.6rem; }
+.fb-cta p  { color: var(--text-muted); margin-bottom: 2rem; max-width: 540px; margin-left: auto; margin-right: auto; }
+
+/* ── Responsive ── */
+@media (max-width: 1000px) {
+  .fb-kort-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 768px) {
+  .fb-intro-grid      { grid-template-columns: 1fr; gap: 3rem; }
+  .fb-bjornbergs-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .fb-ledigt-grid     { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .fb-kort-grid { grid-template-columns: 1fr; }
+}

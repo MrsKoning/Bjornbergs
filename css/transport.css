@@ -1,0 +1,192 @@
+/* ============================================
+   transport.css – Transport & Entreprenad
+   ============================================ */
+
+/* ── Intro ── */
+.transport-intro {
+  padding: 80px 0;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+.transport-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+.transport-intro-text h2 { margin-bottom: 1.2rem; }
+.transport-intro-text p  { color: var(--text-mid); margin-bottom: 1rem; }
+
+.transport-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--border);
+}
+.highlight-row {
+  background: var(--bg-alt);
+  padding: 1.3rem 1.6rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  transition: background var(--transition);
+}
+.highlight-row:hover { background: var(--bg-card); }
+.highlight-icon { font-size: 1.4rem; flex-shrink: 0; }
+.highlight-text h4 {
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  color: var(--gold-dark);
+  margin-bottom: 0.3rem;
+}
+.highlight-text p { font-size: 0.88rem; color: var(--text-muted); margin: 0; }
+
+/* ── Tjänstekort ── */
+.tjanster-section {
+  padding: 90px 0;
+  background: var(--bg-alt);
+}
+.tjanst-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--border);
+}
+.tjanst-item {
+  background: var(--bg-card);
+  padding: 2.8rem 2.4rem;
+  position: relative;
+  transition: background var(--transition);
+}
+.tjanst-item:hover { background: var(--bg); }
+.tjanst-item::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 3px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+.tjanst-item:hover::before { transform: scaleX(1); }
+.tjanst-num {
+  font-family: var(--font-heading);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+  margin-bottom: 0.8rem;
+  display: block;
+}
+.tjanst-item h3 { color: var(--text); margin-bottom: 1rem; font-size: 1.3rem; }
+.tjanst-item p  { font-size: 0.92rem; color: var(--text-muted); margin-bottom: 1rem; }
+.tjanst-item ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.tjanst-item ul li {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  padding-left: 1.2rem;
+  position: relative;
+}
+.tjanst-item ul li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+}
+
+/* ── Fordonspark ── */
+.fordonspark-section {
+  padding: 90px 0;
+  background: var(--bg);
+}
+.fordon-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border);
+  margin-top: 3rem;
+}
+.fordon-card {
+  background: var(--bg-card);
+  padding: 2rem 1.8rem;
+  border-bottom: 3px solid transparent;
+  transition: border-color var(--transition), background var(--transition);
+}
+.fordon-card:hover {
+  border-bottom-color: var(--gold);
+  background: var(--bg-alt);
+}
+.fordon-icon { font-size: 2rem; margin-bottom: 1rem; }
+.fordon-card h4 {
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+.fordon-card p { font-size: 0.88rem; color: var(--text-muted); }
+
+/* ── Certifiering ── */
+.cert-section {
+  padding: 70px 0;
+  background: var(--dark);
+}
+.cert-inner {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+.cert-text { flex: 1; min-width: 260px; }
+.cert-text .section-label { color: var(--gold-light); }
+.cert-text h2 { color: var(--text-light); margin-bottom: 1rem; font-size: 1.8rem; }
+.cert-text p  { color: rgba(244,241,236,0.65); }
+.cert-badges {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  flex-shrink: 0;
+}
+.cert-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(181,160,122,0.3);
+  padding: 0.9rem 1.4rem;
+}
+.cert-item span:first-child { font-size: 1.2rem; }
+.cert-item p {
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  color: var(--gold-light);
+  margin: 0;
+}
+
+/* ── CTA ── */
+.transport-cta {
+  padding: 80px 0;
+  background: var(--bg-alt);
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+.transport-cta h3 { margin-bottom: 0.8rem; font-size: 1.6rem; }
+.transport-cta p  { color: var(--text-muted); margin-bottom: 2rem; }
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .transport-intro-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .tjanst-grid          { grid-template-columns: 1fr; }
+  .fordon-grid          { grid-template-columns: repeat(2, 1fr); }
+  .cert-inner           { flex-direction: column; gap: 2.5rem; }
+}
+@media (max-width: 540px) {
+  .fordon-grid { grid-template-columns: 1fr; }
+}

@@ -2,48 +2,46 @@
    integritetspolicy.css
    ============================================ */
 
-.policy-wrap {
-  padding: 140px 0 100px;
-}
+.policy-wrap { padding: 80px 0 110px; }
+
 .policy-back {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.6rem;
   font-family: var(--font-heading);
-  font-size: 0.75rem;
-  letter-spacing: 0.15em;
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--gold-dark);
   margin-bottom: 2.5rem;
   transition: gap var(--transition);
 }
-.policy-back:hover { gap: 0.8rem; }
 .policy-back::before { content: '←'; font-size: 1rem; }
+.policy-back:hover { gap: 1rem; color: var(--gold); }
 
 .policy-header {
   margin-bottom: 3rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid var(--mid);
+  border-bottom: 1px solid var(--border);
 }
-.policy-header .section-label { margin-bottom: 0.5rem; }
-.policy-header h1 { margin-bottom: 1rem; }
-.policy-header p { color: var(--gray); }
+.policy-header .section-label { color: var(--gold-dark); }
+.policy-header h1 { margin-bottom: 0.8rem; }
+.policy-header p  { color: var(--text-muted); }
 
-.policy-content {
-  max-width: 780px;
-}
+.policy-content { max-width: 780px; }
+
 .policy-content h2 {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   letter-spacing: 0.08em;
+  color: var(--gold-dark);
   margin: 2.5rem 0 0.8rem;
-  color: var(--gold);
 }
 .policy-content h2:first-child { margin-top: 0; }
 .policy-content p {
   font-size: 0.95rem;
-  color: var(--gray);
+  color: var(--text-muted);
   margin-bottom: 1rem;
-  line-height: 1.8;
+  line-height: 1.85;
 }
 .policy-content ul {
   list-style: disc;
@@ -52,21 +50,23 @@
 }
 .policy-content ul li {
   font-size: 0.95rem;
-  color: var(--gray);
+  color: var(--text-muted);
   margin-bottom: 0.4rem;
-  line-height: 1.7;
+  line-height: 1.75;
 }
 .policy-content a {
-  color: var(--gold);
+  color: var(--gold-dark);
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+.policy-content a:hover { color: var(--gold); }
+
 .policy-back-bottom {
   margin-top: 3rem;
   padding-top: 2rem;
-  border-top: 1px solid var(--mid);
+  border-top: 1px solid var(--border);
 }
 
 @media (max-width: 768px) {
-  .policy-wrap { padding: 120px 0 80px; }
+  .policy-wrap { padding: 70px 0 80px; }
 }
